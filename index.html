@@ -1,128 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Final</title>
-  <link rel="stylesheet" href="https://cdn.tailwindcss.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="Style.css">
-  
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">PROYECTO FINAL</h1>
+    </header>
 
-<body class="fondo">
-  <div class="contenedor">
-    <div class="header">
-      <h1 class="titulo">PROYECTO FINAL</h1>
-    </div>
-
-    <div class="barra-institucional">
-      <img src="https://1000marcas.net/wp-content/uploads/2022/01/IPN-Logo.png" alt="IPN Logo" class="logo"
-        height="120px" />
-      <div class="info-ipn">
+    <!-- Institutional Bar -->
+    <div class="institutional-bar">
+      <img src="https://1000marcas.net/wp-content/uploads/2022/01/IPN-Logo.png" alt="IPN Logo" class="logo">
+      <div class="institution-info">
         <p>INSTITUTO POLITÉCNICO NACIONAL <br>
           UNIDAD PROFESIONAL INTERDISCIPLINARIA DE INGENIERÍA Y<br>
           CIENCIAS SOCIALES Y ADMINISTRATIVAS<br>
           INGENIERÍA INDUSTRIAL</p>
       </div>
-      <img src="https://sseis.upiicsa.ipn.mx/induccion/images/Escudo-UPIICSA.png" alt="UPICSA Logo" class="logo" />
+      <img src="https://sseis.upiicsa.ipn.mx/induccion/images/Escudo-UPIICSA.png" alt="UPIICSA Logo" class="logo">
     </div>
 
-    <div class="info-grupo">
-      <p>Informatica administrativa</p>
-      <p>4AM41</p>
-      <div class="equipo">
-        <p>EQUIPO 2</p>
-        <p>Cano Meraz Gabriela<br>
-          Cervantes Santiago Ivan <br>
-          Juarez Perez Greta Nahomi<br>
-          Salivar Gumeta Tamara <br>
-          Serrano Espinosa Antonio Carlos <br>
-          Vazquez Vieyra Abigail<br>
-
-        </p>
+    <!-- Group Info -->
+    <div class="group-info">
+      <div class="course-info">
+        <p class="course-title">Informatica administrativa</p>
+        <p class="course-group">4AM41</p>
       </div>
 
-      <!-- Temáticas -->
-      <div class="tematicas">
-        <details>
-          <summary>UNIDAD TEMÁTICA 1</summary>
-          <a href="">Capitulo 1 </a> <br>
-          <a>Presentaciones </a> <br>
-          <a>Guia de estudio</a> <br>
-          <a>Apoyo visual</a> <br>
-          <a>Resumenes</a> <br>
-          <a>Tareas</a> <br>
-        </details>
-        <details>
-          <summary>UNIDAD TEMÁTICA 2</summary>
-          <a>Capitulo 2</a> <br>
-          <a>presentaciones </a><br>
-          <a>guia de estudio</a><br>
-          <a>Apoyo visual</a><br>
-          <a>Resumenes</a><br>
-          <a>Tareas</a><br>
-        </details>
-        <details>
-          <summary>UNIDAD TEMÁTICA 3</summary>
-          <a>Capitulo 3</a> <br>
-          <a>presentaciones </a><br>
-          <a>guia de estudio</a><br>
-          <a>Apoyo visual</a><br>
-          <a>Resumenes</a><br>
-          <a>Tareas</a><br>
-        </details>
-        <details>
-          <summary>UNIDAD TEMÁTICA 4</summary>
-          <a>Capitulo 4</a> <br>
-          <a>presentaciones </a> <br>
-          <a>guia de estudio</a> <br>
-          <a>Apoyo visual</a> <br>
-          <a>Resumenes</a> <br>
-          <a>Tareas</a> <br>
-        </details>
-        <details>
-          <summary>UNIDAD TEMÁTICA 5</summary>
-          <a>Capitulo 5</a> <br>
-          <a>presentaciones </a> <br>
-          <a>guia de estudio</a> <br>
-          <a>Apoyo visual</a> <br>
-          <a>Resumenes</a> <br>
-          <a>Tareas</a> <br>
-        </details>
-        <details>
-          <summary>PROYECTO</summary>
-          <a>Pagina web</a> <br>
-          <a>CRM</a> <br>
-        </details>
-        <details>
-          <summary>PRÁCTICAS</summary>
+      <div class="team-info">
+        <h2 class="team-title">EQUIPO 2</h2>
+        <ul class="team-members">
+          <li>Cano Meraz Gabriela</li>
+          <li>Cervantes Santiago Ivan</li>
+          <li>Juarez Perez Greta Nahomi</li>
+          <li>Salivar Gumeta Tamara</li>
+          <li>Serrano Espinosa Antonio Carlos</li>
+          <li>Vazquez Vieyra Abigail</li>
+        </ul>
+      </div>
+
+      <!-- Thematic Units -->
+      <div class="thematic-units">
+        <button class="accordion-button">UNIDAD TEMÁTICA 1</button>
+        <div class="accordion-content">
+          <a href="#" class="content-link">Capitulo 1</a>
+          <a href="#" class="content-link">Presentaciones</a>
+          <a href="#" class="content-link">Guia de estudio</a>
+          <a href="#" class="content-link">Apoyo visual</a>
+          <a href="#" class="content-link">Resumenes</a>
+          <a href="#" class="content-link">Tareas</a>
+        </div>
+
+        <button class="accordion-button">UNIDAD TEMÁTICA 2</button>
+        <div class="accordion-content">
+          <a href="#" class="content-link">Capitulo 2</a>
+          <a href="#" class="content-link">Presentaciones</a>
+          <a href="#" class="content-link">Guia de estudio</a>
+          <a href="#" class="content-link">Apoyo visual</a>
+          <a href="#" class="content-link">Resumenes</a>
+          <a href="#" class="content-link">Tareas</a>
+        </div>
+
+        <button class="accordion-button">UNIDAD TEMÁTICA 3</button>
+        <div class="accordion-content">
+          <a href="#" class="content-link">Capitulo 3</a>
+          <a href="#" class="content-link">Presentaciones</a>
+          <a href="#" class="content-link">Guia de estudio</a>
+          <a href="#" class="content-link">Apoyo visual</a>
+          <a href="#" class="content-link">Resumenes</a>
+          <a href="#" class="content-link">Tareas</a>
+        </div>
+
+        <button class="accordion-button">UNIDAD TEMÁTICA 4</button>
+        <div class="accordion-content">
+          <a href="#" class="content-link">Capitulo 4</a>
+          <a href="#" class="content-link">Presentaciones</a>
+          <a href="#" class="content-link">Guia de estudio</a>
+          <a href="#" class="content-link">Apoyo visual</a>
+          <a href="#" class="content-link">Resumenes</a>
+          <a href="#" class="content-link">Tareas</a>
+        </div>
+
+        <button class="accordion-button">UNIDAD TEMÁTICA 5</button>
+        <div class="accordion-content">
+          <a href="#" class="content-link">Capitulo 5</a>
+          <a href="#" class="content-link">Presentaciones</a>
+          <a href="#" class="content-link">Guia de estudio</a>
+          <a href="#" class="content-link">Apoyo visual</a>
+          <a href="#" class="content-link">Resumenes</a>
+          <a href="#" class="content-link">Tareas</a>
+        </div>
+
+        <button class="accordion-button">PROYECTO</button>
+        <div class="accordion-content">
+          <a href="#" class="content-link">Pagina web</a>
+          <a href="#" class="content-link">CRM</a>
+        </div>
+
+        <button class="accordion-button">PRÁCTICAS</button>
+        <div class="accordion-content">
           <p>Listado de prácticas...</p>
-        </details>
+        </div>
       </div>
     </div>
 
-    <!-- Bienvenida -->
-    <div class="bienvenida">
-      <p>Que gusto tenerte aqui!!!!</p>
-      <p>
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <h2 class="welcome-title">¡Que gusto tenerte aqui!</h2>
+      <p class="welcome-text">
         En este sitio podras encontrar informacion util sobre la unidad de aprendizaje de Informatica Administrativa
-        <br>¡Esperamos que disfrutes la experiencia!
+        <br>
+        ¡Esperamos que disfrutes la experiencia!
       </p>
-      <p class="descripcion">
+      <p class="welcome-description">
         En esta sección podrás encontrar el desarrollo de la unidad de aprendizaje "Informatica Administrativa"
       </p>
-      <button class="boton">Click Aquí</button>
+      <button class="welcome-button" id="welcomeButton">Click Aquí</button>
     </div>
   </div>
 
   <script>
-    document.querySelector(".boton").addEventListener("click", function () {
-      alert("¡Gracias por visitar mi sitio!");
+    // Accordion functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const accordionButtons = document.querySelectorAll('.accordion-button');
+      
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const content = this.nextElementSibling;
+          
+          // Close all accordion contents
+          document.querySelectorAll('.accordion-content').forEach(item => {
+            if (item !== content) {
+              item.style.display = 'none';
+            }
+          });
+          
+          // Toggle current content
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+          } else {
+            content.style.display = 'block';
+          }
+        });
+      });
+      
+      // Welcome button functionality
+      document.getElementById('welcomeButton').addEventListener('click', function() {
+        alert('¡Gracias por visitar mi sitio!');
+      });
     });
   </script>
-  
 </body>
-
 </html>
