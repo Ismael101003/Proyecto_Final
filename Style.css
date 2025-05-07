@@ -1,204 +1,211 @@
-/* Base styles with green color scheme */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: linear-gradient(to bottom, #e6ffea, #eafff0);
-  min-height: 100vh;
-  color: #333;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header */
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.title {
-  font-size: 32px;
-  font-weight: bold;
-  color: #0f5132;
-  border-bottom: 4px solid #15803d;
-  padding-bottom: 8px;
-  display: inline-block;
-}
-
-/* Institutional bar */
-.institutional-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
-  padding: 15px;
-  margin-bottom: 20px;
-  border-left: 5px solid #16a34a;
-}
-
-.institution-info {
-  text-align: center;
-  font-weight: 500;
-  color: #166534;
-  margin: 10px 0;
-}
-
-.logo {
-  max-width: 120px;
-  height: auto;
-}
-
-/* Group info */
-.group-info {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.course-info {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.course-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #166534;
-}
-
-.team-info {
-  background-color: #ecfdf5;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid #d1fae5;
-}
-
-.team-title {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: #15803d;
-  margin-bottom: 10px;
-}
-
-.team-members {
-  text-align: center;
-  list-style-type: none;
-}
-
-.team-members li {
-  padding: 3px 0;
-  color: #166534;
-}
-
-/* Accordion */
-.accordion-button {
-  width: 100%;
-  text-align: left;
-  padding: 15px;
-  background-color: #f0fdf4;
-  border: 1px solid #dcfce7;
-  border-radius: 4px;
-  font-weight: bold;
-  color: #15803d;
-  cursor: pointer;
-  margin-bottom: 5px;
-  transition: background-color 0.3s;
-}
-
-.accordion-button:hover {
-  background-color: #dcfce7;
-}
-
-.accordion-content {
-  display: none;
-  padding: 15px;
-  background-color: white;
-  border: 1px solid #dcfce7;
-  border-top: none;
-  margin-bottom: 10px;
-}
-
-.content-link {
-  display: block;
-  padding: 8px;
-  color: #16a34a;
-  text-decoration: none;
-  transition: background-color 0.2s;
-  border-radius: 4px;
-}
-
-.content-link:hover {
-  background-color: #f0fdf4;
-  text-decoration: underline;
-}
-
-/* Welcome section */
-.welcome-section {
-  background: linear-gradient(to right, #16a34a, #059669);
-  border-radius: 8px;
-  box-shadow: 0 10px 15px -3px rgba(0, 128, 0, 0.2);
-  padding: 30px;
-  text-align: center;
-  color: white;
-}
-
-.welcome-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.welcome-text {
-  margin-bottom: 15px;
-}
-
-.welcome-description {
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-.welcome-button {
-  background-color: white;
-  color: #15803d;
-  font-weight: bold;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: all 0.3s;
-  border: 2px solid transparent;
-}
-
-.welcome-button:hover {
-  background-color: #f0fdf4;
-  transform: scale(1.05);
-  border-color: #dcfce7;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .institutional-bar {
-    flex-direction: column;
-  }
-  
-  .logo {
-    margin-bottom: 10px;
-  }
-}
+    /* Base styles with yellow-green background */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      /* Yellow background with subtle green gradient */
+      background: linear-gradient(135deg, #fff9c4 0%, #f0f4c3 50%, #dcedc8 100%);
+      min-height: 100vh;
+      color: #333;
+      line-height: 1.6;
+      background-attachment: fixed;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #2e7d32;
+      border-bottom: 4px solid #558b2f;
+      padding-bottom: 8px;
+      display: inline-block;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    /* Institutional bar */
+    .institutional-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 5px solid #8bc34a;
+    }
+    
+    .institution-info {
+      text-align: center;
+      font-weight: 500;
+      color: #33691e;
+      margin: 10px 0;
+    }
+    
+    .logo {
+      max-width: 120px;
+      height: auto;
+    }
+    
+    /* Group info */
+    .group-info {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .course-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .course-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #33691e;
+    }
+    
+    .team-info {
+      background: linear-gradient(to right, #fff9c4, #f0f4c3);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #dcedc8;
+    }
+    
+    .team-title {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #33691e;
+      margin-bottom: 10px;
+    }
+    
+    .team-members {
+      text-align: center;
+      list-style-type: none;
+    }
+    
+    .team-members li {
+      padding: 3px 0;
+      color: #33691e;
+    }
+    
+    /* Accordion */
+    .accordion-button {
+      width: 100%;
+      text-align: left;
+      padding: 15px;
+      background: linear-gradient(to right, #fff9c4, #dcedc8);
+      border: 1px solid #c5e1a5;
+      border-radius: 4px;
+      font-weight: bold;
+      color: #33691e;
+      cursor: pointer;
+      margin-bottom: 5px;
+      transition: all 0.3s;
+    }
+    
+    .accordion-button:hover {
+      background: linear-gradient(to right, #fff59d, #c5e1a5);
+      transform: translateX(3px);
+    }
+    
+    .accordion-content {
+      display: none;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #c5e1a5;
+      border-top: none;
+      margin-bottom: 10px;
+    }
+    
+    .content-link {
+      display: block;
+      padding: 8px;
+      color: #558b2f;
+      text-decoration: none;
+      transition: all 0.2s;
+      border-radius: 4px;
+    }
+    
+    .content-link:hover {
+      background-color: #f0f4c3;
+      text-decoration: underline;
+      padding-left: 12px;
+    }
+    
+    /* Welcome section */
+    .welcome-section {
+      background: linear-gradient(135deg, #9ccc65, #7cb342);
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0, 128, 0, 0.2);
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+    
+    .welcome-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    
+    .welcome-text {
+      margin-bottom: 15px;
+    }
+    
+    .welcome-description {
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    
+    .welcome-button {
+      background: linear-gradient(to right, #fff9c4, #f0f4c3);
+      color: #558b2f;
+      font-weight: bold;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    
+    .welcome-button:hover {
+      background: linear-gradient(to right, #fff59d, #dcedc8);
+      transform: scale(1.05);
+      border-color: #c5e1a5;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .institutional-bar {
+        flex-direction: column;
+      }
+      
+      .logo {
+        margin-bottom: 10px;
+      }
+    }
